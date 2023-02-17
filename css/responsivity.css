@@ -1,0 +1,48 @@
+@media (min-width: 950px) {
+
+    body {
+        min-height: 100vh;
+        justify-content: center;
+        gap: 5.5rem;
+    }
+
+    header {
+        height: fit-content;
+    }
+
+    main {
+        display: flex;
+        max-width: 57.5rem;
+        gap: 2rem;
+        border-radius: 25px;
+    }
+
+    form {
+        padding: 1rem;
+    }
+
+    form,
+    .results {
+        width: 100%;
+    }
+
+    .distance {
+        margin-bottom: 2.5rem;
+    }
+
+    .results {
+        padding: 2.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 0;
+    }
+
+    .results div p:last-child {
+        font-size: 3rem;
+    }
+
+    .tip-amount {
+        margin-bottom: 2.5rem;
+    }
+}

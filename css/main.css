@@ -1,0 +1,124 @@
+.distance {
+    margin-bottom: 2rem;
+}
+
+.input-box {
+    background: var(--very-light-grayish-cyan);
+    display: flex;
+    align-items: center;
+    padding: .375rem 1rem;
+    border-radius: 5px;
+}
+
+.input-box:hover {
+    outline: 2px solid var(--strong-cyan);
+}
+
+.input-box:has(input:focus) {
+    outline: 2px solid var(--strong-cyan);
+}
+
+.input-box input {
+    text-align: right;
+    background: transparent;
+}
+
+.input-boxes {
+    margin-top: .625rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.input-boxes input[type="button"] {
+    background: var(--very-dark-cyan);
+    color: var(--white);
+    border-radius: 5px;
+
+}
+
+.input-boxes input[type="button"]:hover {
+    background: var(--light-cyan);
+    cursor: pointer;
+    transition: .3s;
+}
+
+.input-boxes input[type="button"].button-selected {
+    background: var(--strong-cyan);
+}
+
+.input-boxes input[type="number"] {
+    background: var(--very-light-grayish-cyan);
+    text-align: center;
+    border-radius: 5px;
+}
+
+.input-boxes input[type="number"]:hover
+.input-boxes input[type="number"]:focus {
+    outline: 2px solid var(--strong-cyan);
+}
+
+.results {
+    background: var(--very-dark-cyan);
+    border-radius: 15px;
+    padding: 1.5rem;
+    margin-top: 2rem;
+}
+
+.results-values div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tip-amount {
+    margin-bottom: 1.25rem;
+}
+
+.results div p:first-child {
+    line-height: 1.5rem;
+    color: var(--white);
+}
+
+.results span {
+    color: var(--grayish-cyan);
+    font-size: .875rem;
+}
+
+.results div p:last-child {
+    font-size: 2rem;
+    line-height: 3rem;
+    color: var(--strong-cyan);
+}
+
+.total {
+    margin-bottom: 2rem;
+}
+
+.results button {
+    width: 100%;
+    padding-block: .5625rem;
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+    text-transform: uppercase;
+    background: var(--strong-cyan);
+    border: 0;
+    border-radius: 5px;
+    color: var(--very-dark-cyan);
+}
+
+.results button:hover {
+    background: var(--light-cyan);
+    cursor: pointer;
+    transition: .3s;
+}
+
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
+}
+input[type=number] { 
+   -moz-appearance: textfield;
+   appearance: textfield;
+
+}
